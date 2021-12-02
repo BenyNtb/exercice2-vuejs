@@ -23,21 +23,21 @@
                     <div class="card card-shadow border-0 mb-4"
                         style="background:url(https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/pricing/p5-img1.jpg)no-repeat">
                         <div class="card-body">
-                            <h6 class="text-white mt-3 mb-0">{{titre1}}</h6>
-                            <h2 class="text-white mt-0 monthly" v-show="monthly">{{price1}}</h2>
+                            <h6 class="text-white mt-3 mb-0">{{titremonthly1}}</h6>
+                            <h2 class="text-white mt-0 monthly" v-show="monthly">{{pricemonth1}}</h2>
                             <ul class="general-listing">
                                 <li class="py-3 d-block">
-                                    <h6 class="subtitle font-weight-normal">{{stockage1}}</h6>
+                                    <h6 class="subtitle font-weight-normal">{{stockagemonth1}}</h6>
                                 </li>
                                 <li class="py-3 d-block">
-                                    <h6 class="subtitle font-weight-normal">{{video1}}</h6>
+                                    <h6 class="subtitle font-weight-normal">{{videomonth1}}</h6>
                                 </li>
                                 <li class="py-3 d-block">
-                                    <h6 class="subtitle font-weight-normal">{{send1}}</h6>
+                                    <h6 class="subtitle font-weight-normal">{{sendmonth1}}</h6>
                                 </li>
                             </ul>
                             <a class="btn btn-outline-success btn-md rounded-pill mb-3"
-                                href="#f1"><span>{{learn}}</span></a>
+                                href="#f1"><span>{{button}}</span></a>
                         </div>
                     </div>
                 </div>
@@ -45,25 +45,25 @@
                     <div class="card card-shadow border-0 mb-4"
                         style="background:url(https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/pricing/p5-img2.jpg)no-repeat">
                         <div class="card-body">
-                            <h6 class="text-white mt-3 mb-0">{{titre2}}</h6>
-                            <h2 class="text-white mt-0 monthly">{{price2}}</h2>
+                            <h6 class="text-white mt-3 mb-0">{{titremonthly2}}</h6>
+                            <h2 class="text-white mt-0 monthly">{{pricemonth2}}</h2>
                             <div class="star-plan mt-3"><img
                                     src="https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/pricing/star.png"
                                     alt="wrapkit" />
                             </div>
                             <ul class="general-listing">
                                 <li class="py-3 d-block">
-                                    <h6 class="subtitle font-weight-normal">{{stockage2}}</h6>
+                                    <h6 class="subtitle font-weight-normal">{{stockagemonth2}}</h6>
                                 </li>
                                 <li class="py-3 d-block">
-                                    <h6 class="subtitle font-weight-normal">{{video2}}</h6>
+                                    <h6 class="subtitle font-weight-normal">{{videomonth2}}</h6>
                                 </li>
                                 <li class="py-3 d-block">
-                                    <h6 class="subtitle font-weight-normal">{{send2}}</h6>
+                                    <h6 class="subtitle font-weight-normal">{{sendmonth2}}</h6>
                                 </li>
                             </ul>
                             <a class="btn btn-success-gradiant btn-md text-white rounded-pill mb-3"
-                                href="#f1"><span>{{learn}}</span></a>
+                                href="#f1"><span>{{button}}</span></a>
                         </div>
                     </div>
                 </div>
@@ -71,21 +71,21 @@
                     <div class="card card-shadow border-0 mb-4"
                         style="background:url(https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/pricing/p5-img3.jpg)no-repeat">
                         <div class="card-body">
-                            <h6 class="text-white mt-3 mb-0">{{titre3}}</h6>
-                            <h2 class="text-white mt-0 monthly">{{price3}}</h2>
+                            <h6 class="text-white mt-3 mb-0">{{titremonthly3}}</h6>
+                            <h2 class="text-white mt-0 monthly">{{pricemonth3}}</h2>
                             <ul class="general-listing">
                                 <li class="d-block py-3">
-                                    <h6 class="subtitle font-weight-normal">{{stockage3}}</h6>
+                                    <h6 class="subtitle font-weight-normal">{{stockagemonth3}}</h6>
                                 </li>
                                 <li class="d-block py-3">
-                                    <h6 class="subtitle font-weight-normal">{{video3}}</h6>
+                                    <h6 class="subtitle font-weight-normal">{{videomonth3}}</h6>
                                 </li>
                                 <li class="d-block py-3">
-                                    <h6 class="subtitle font-weight-normal">{{send3}}</h6>
+                                    <h6 class="subtitle font-weight-normal">{{sendmonth3}}</h6>
                                 </li>
                             </ul>
                             <a class="btn btn-outline-success btn-md rounded-pill mb-3"
-                                href="#f1"><span>{{learn}}</span></a>
+                                href="#f1"><span>{{button}}</span></a>
                         </div>
                     </div>
                 </div>
@@ -103,35 +103,23 @@
         //     Annually,
         //     Monthly,
         // },
-        data() {
-            return {
-                title: "Our pricing",
-                monthly: false,
-                annually: true,
-                titre1: "Basic",
-                titre2: "Professionnal",
-                titre3: "Master",
-
-                price1: "$19.99",
-                price2: "$24.99",
-                price3: "$34.99",
-                
-
-                stockage1: "500 GB Storage",
-                stockage2: "1 TB Storage",
-                stockage3: "2 TB Storage",
-
-                video1: "2 Users Allowed",
-                video2: "5 Users Allowed",
-                video3: "10 Users Allowed",
-
-                send1: "Send up to 3 GB",
-                send2: "Send up to 10 GB",
-                send3: "Send up to 20 GB",
-
-                learn: "LEARN MORE",
-            }
-
+        props: {
+            titremonthly1: String,
+            titremonthly2: String,
+            titremonthly3: String,
+            pricemonth1: String,
+            pricemonth2: String,
+            pricemonth3: String,
+            stockagemonth1: String,
+            stockagemonth2: String,
+            stockagemonth3: String,
+            videomonth1: String,
+            videomonth2: String,
+            videomonth3: String,
+            sendmonth1: String,
+            sendmonth2: String,
+            sendmonth3: String,
+            button: String,
         },
         methods: {
             month() {

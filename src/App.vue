@@ -108,34 +108,7 @@
         title: "Our pricing",
         monthly: false,
         annually: true,
-
-
-        // titre1: "Basic",
-        // titre2: "Professionnal",
-        // titre3: "Master",
-
-        // price1: "$19.99",
-        // price2: "$24.99",
-        // price3: "$34.99",
-        // priceyear1: "$199.99",
-        // priceyear2: "$249.99",
-        // priceyear3: "$399.99",
-
-        // stockage1: "500 GB Storage",
-        // stockage2: "1 TB Storage",
-        // stockage3: "2 TB Storage",
-
-        // video1: "2 Users Allowed",
-        // video2: "5 Users Allowed",
-        // video3: "10 Users Allowed",
-
-        // send1: "Send up to 3 GB",
-        // send2: "Send up to 10 GB",
-        // send3: "Send up to 20 GB",
-
-        // learn: "LEARN MORE",
       }
-
     },
     methods: {
       month() {
